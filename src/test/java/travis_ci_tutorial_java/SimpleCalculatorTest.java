@@ -29,4 +29,10 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.divide(10, 2), 5);
 	}
+
+	@Test
+	public void testDivideByZero() {
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.divide(10, 0), 0);
+	}
 }
